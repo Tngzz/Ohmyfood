@@ -4,7 +4,127 @@ $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 
+$font-title: 'Shrikhand', cursive;
+$font-texte: 'Roboto' , sans-serif; 
+
 a {
     text-decoration: none;
     color: $colour-primary;
+}
+
+header {
+    font-family: $font-texte;
+}
+
+main {
+    font-family: $font-texte;
+}
+
+footer {
+    font-family: $font-texte;
+}
+
+body {
+    margin: 0;
+}
+
+.logo-head {
+    align-items: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 40%;
+}
+
+.location {
+    height: 40px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 6px 16px 0px;
+}
+
+.icon-location {
+    padding: 10px 3px 10px 10px;
+}
+
+.text-location {
+    padding: 10px;
+    font-size:large;
+}
+
+.booking {
+    background-color: #F2F2F2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+}
+
+.button-explore {
+    margin: 0% 22% 10% 22%;
+    border-radius: 22px;
+    background-color: $colour-primary;
+    border: none;
+    box-shadow: rgb(99 99 99 / 20%) 3px 5px 3px 0px;
+}
+
+.button-text {
+    font-family: $font-texte;
+    font-size: revert;
+    padding: 8px;
+    color: white;
+
+}
+
+.white-logo {
+    width: 40%;
+}
+
+footer {
+    background-color: #000000c7;
+}
+
+.ul-block {
+    list-style-type: none;
+}
+
+.title-nav {
+    margin-left: 10px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-button {
+    margin: 15px;
+    border: solid 1px #F2F2F2;
+    margin-left: -10px;
+    width: 95%;
+    padding: 15px 7px 15px 7px;
+    border-radius: 14px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.text-button {
+    margin: 20px;
 }

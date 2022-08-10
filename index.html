@@ -7,7 +7,8 @@
     <title>Ohmyfood</title>
     
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="Public/css/Style.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="Sass/Main.css">
 
     <!--Police-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a443ef14c1.js" crossorigin="anonymous"></script>
     </head>
 <body>
     <header>
@@ -27,7 +29,9 @@
            <div class="icon-location">
                 <i class="fa-solid fa-location-dot"></i>
            </div> 
-           <text class="text-location">Paris, Belleville</text> 
+           <text class="text-location">
+                <b>Paris, Belleville</b>
+           </text> 
         </div>
         
         <section class="booking">
@@ -35,21 +39,29 @@
                 <b>Réservez le menu qui vous convient</b>
             </div>
             <div class="subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>
-            <button type="explore" class="button-explore">Explorer nos restaurants</button>
+            <button type="explore" class="button-explore">
+                <text class="button-text">Explorer nos restaurants</text>
+            </button>
         </section>
     </header>
     <main>
-        <nav>
-            <ul class="principal-nav">
-                <h1 class="title-nav">Fonctionnement</h1>
-                <li>
-                    <a hrer="#">Choissisez un restaurant</a>
+        <nav class="principal-nav">
+            <h1 class="title-nav">Fonctionnement</h1>
+            <ul class="menu">
+                <li class="menu-button"><i class="fa-solid fa-mobile-screen-button"></i>
+                    <a hrer="#">
+                        <text class="text-button">Choissisez un restaurant</text>
+                    </a>
                 </li>
-                <li>
-                    <a hrer="#">Composez votre menu</a>
+                <li class="menu-button"><i class="fa-solid fa-bars"></i>
+                    <a hrer="#">
+                        <text class="text-button">Composez votre menu</text>
+                    </a>
                 </li>
-                <li>
-                    <a hrer="#">Dégustez au restaurant</a>
+                <li class="menu-button"><i class="fa-solid fa-store"></i>
+                    <a hrer="#">
+                        <text class="text-button">Dégustez au restaurant</text>
+                    </a>
                 </li>
             </ul>
         </nav>
