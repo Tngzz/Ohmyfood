@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+}
+.logo-head {
+    align-items: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 40%;
+}
+
+.location {
+    height: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 1px 4px 0px   
+}
+
+.text-location {
+    padding: 10px;
+}
+
+.booking {
+    background-color: #F2F2F2;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.button-explore {
+    display: flex;
+    justify-content: center;
+}
+
+.white-logo {
+    width: 40%;
+}
+
+footer {
+    background-color: #000000c7;
+}
+
+.ul-block {
+    list-style-type: none;
+}
