@@ -107,14 +107,55 @@ footer {
   margin: 15px;
   border: solid 1px #F2F2F2;
   margin-left: -10px;
-  width: 95%;
+  width: 85%;
   padding: 15px 7px 15px 7px;
   border-radius: 14px;
   background-color: #F2F2F2;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .text-button {
   margin: 20px;
+  color: black;
+  font-size: smaller;
+}
+
+.text-notification {
+  display: flex;
+  align-content: center;
+}
+
+.notification {
+  position: absolute;
+  top: -4px;
+  right: 22px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.notification {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  background: #9356DC;
+  color: white;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+}
+
+.h1-restaurant {
+  padding: 10px;
 }/*# sourceMappingURL=Main.css.map */
