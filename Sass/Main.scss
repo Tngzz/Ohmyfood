@@ -132,7 +132,7 @@ body {
     background-color: transparent;
     position: absolute;
     display: inline-block;
-    left: 4%;
+    left: 2%;
  
   }
   
@@ -238,3 +238,69 @@ footer {
     
 }
 
+//-CSS POUR PAGE SECONDAIRE-//
+
+.icon-back {
+    position: absolute;
+    left: 4%;
+    color: black;
+}
+
+.logo-head2 {
+    align-items: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.link-page2 {
+    display: flex;
+    justify-content: center;
+}
+
+.image-fond {
+    width: 100%;
+}
+
+.create-menu {
+    background-color: #F2F2F2;
+    border-bottom: #8bcda3;
+    
+}
+.title-create-menu {
+    font-family: $font-title;
+    display: flex;
+    justify-content: center;
+}
+
+.title-creat {
+    border-bottom: #00802b solid 1px;
+    border-bottom-height: 10px;
+}
+
+.list-menu {
+    list-style: none;
+    padding: 0px;
+}
+
+.liste {
+    margin: 3% 3% 0PX 5%;
+    border: solid 1px white;
+    width: 85%;
+    padding: 15px 7px 15px 7px;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.name{
+    margin: 2%;
+}
+
+.ingrédients {
+    margin: 2%;
+    font-size: small;
+}
+
+.price {
+    margin: 0;
+}
