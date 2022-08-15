@@ -1,7 +1,7 @@
 @charset "UTF-8";
 a {
   text-decoration: none;
-  color: #9356DC;
+  color: black;
 }
 
 header {
@@ -57,6 +57,7 @@ body {
 
 .title {
   display: flex;
+  justify-content: center;
   padding: 20px;
   font-size: xx-large;
   text-align: center;
@@ -79,7 +80,7 @@ body {
 
 .button-text {
   font-family: "Roboto", sans-serif;
-  font-size: revert;
+  font-size: larger;
   padding: 8px;
   color: white;
 }
@@ -102,6 +103,8 @@ body {
   background-color: #F2F2F2;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .text-button {
@@ -245,12 +248,18 @@ footer {
   background-color: #F2F2F2;
   border-bottom: #8bcda3;
   padding-bottom: 20px;
+  border-radius: 30px 30px 0px 0px;
+  z-index: 1;
+  position: relative;
+  margin-top: -77px;
 }
 
 .title-create-menu {
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: center;
+  padding-top: 30px;
+  font-size: xx-large;
 }
 
 .title-creat {
@@ -299,4 +308,5 @@ footer {
   width: 55%;
   padding: 3% 3% 3% 3%;
   margin-top: 5%;
+  cursor: pointer;
 }/*# sourceMappingURL=Main.css.map */
