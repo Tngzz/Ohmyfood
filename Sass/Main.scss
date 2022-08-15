@@ -7,6 +7,9 @@ $colour-tertiary: #99E2D0;
 $font-title: 'Shrikhand', cursive;
 $font-texte: 'Roboto' , sans-serif; 
 
+$Box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+
+
 
 
 a {
@@ -166,7 +169,7 @@ body {
     width: 90%;
     height: 240px;
     border-radius: 12px 12px 12px 12px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: $Box-shadow;
 
 }
 
@@ -260,11 +263,13 @@ footer {
 
 .image-fond {
     width: 100%;
+    background-image: url(/Maquettes-Ohmyfood/images/restaurants/pallette-du-gout.jpg);
 }
 
 .create-menu {
     background-color: #F2F2F2;
     border-bottom: #8bcda3;
+    padding-bottom: 20px;
     
 }
 .title-create-menu {
@@ -274,8 +279,9 @@ footer {
 }
 
 .title-creat {
-    border-bottom: #00802b solid 1px;
-    border-bottom-height: 10px;
+    border-bottom: $colour-tertiary solid 3px;
+    margin-left: 5%;
+    width: 41px;
 }
 
 .list-menu {
@@ -287,9 +293,11 @@ footer {
     margin: 3% 3% 0PX 5%;
     border: solid 1px white;
     width: 85%;
-    padding: 15px 7px 15px 7px;
+    padding: 1% 2% 1% 2%;
     border-radius: 14px;
     background-color: white;
+    height: 10%;
+    box-shadow: $Box-shadow;
 }
 
 .name{
@@ -299,8 +307,21 @@ footer {
 .ingrédients {
     margin: 2%;
     font-size: small;
+    display: flex; 
+    justify-content: space-between;
 }
 
 .price {
     margin: 0;
+}
+
+.button-order {
+    margin: 0% 22% 10% 22%;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    border: none;
+    box-shadow: rgb(99 99 99 / 20%) 3px 5px 3px 0px;
+    width: 55%;
+    padding: 3% 3% 3% 3%;
+    margin-top: 5%;
 }
