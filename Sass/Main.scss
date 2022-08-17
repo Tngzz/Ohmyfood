@@ -4,6 +4,7 @@
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
+$colour-degrade:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
 
 //-Police-//
 $font-title: 'Shrikhand', cursive;
@@ -11,7 +12,6 @@ $font-texte: 'Roboto' , sans-serif;
 
 //-Shadow-//
 $Box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
-
 
 a {
     text-decoration: none;
@@ -39,6 +39,7 @@ body {
     height: 70px;
     display: flex;
     justify-content: center;
+
 }
 
 .logo {
@@ -87,9 +88,10 @@ body {
 .button-explore {
     margin: 0% 22% 10% 22%;
     border-radius: 22px;
-    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);;
     border: none;
     box-shadow: rgb(99 99 99 / 20%) 3px 5px 3px 0px;
+    
 }
 
 .button-text {
@@ -120,11 +122,6 @@ body {
     cursor: pointer;
     box-shadow: $Box-shadow;
 }
-
-.menu-button a:hover {
-    
-}
-
 
 .text-button {
     margin: 20px;
@@ -234,12 +231,10 @@ footer {
 
 .ul-block li {
     margin: 5px;
-    
 }
 
 .ul-block li a:link {
     color: white;
-    
 }
 
 //-CSS POUR PAGE SECONDAIRE-//
@@ -275,8 +270,8 @@ footer {
     z-index: 1;
     position: relative;
     margin-top: -77px;
-    
 }
+
 .title-create-menu {
     font-family: $font-title;
     display: flex;
@@ -304,7 +299,7 @@ footer {
     border-radius: 14px;
     background-color: white;
     height: 10%;
-    box-shadow: $Box-shadow;
+    box-shadow: $Box-shadow; 
 }
 
 .name {
@@ -322,6 +317,13 @@ footer {
     margin: 0;
 }
 
+.jauge {
+    width: 5%;
+    display: flex;
+    background-color: $colour-tertiary;
+}
+
+
 .button-order {
     margin: 0% 22% 10% 22%;
     border-radius: 22px;
@@ -332,4 +334,74 @@ footer {
     padding: 3% 3% 3% 3%;
     margin-top: 5%;
     cursor: pointer;
+}
+
+
+.heart-container {
+    position: relative ;
+    width: 40px;
+    height: 40px;
+    left: 83%;
+    margin-top: -54px;
+}
+
+.heart-clip {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   overflow: hidden;
+   clip-path: url(#svgPath);
+
+   &:hover {
+      animation: pulse 0.6s 0.3s infinite;
+
+      &::before {
+         transform: scale(1);
+         opacity: 1;
+      }
+   }
+   &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: blue;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.2s linear, opacity 0.2s linear;
+      transform-origin: center 60%;
+   }
+   &.active {
+      animation: pulse 0.6s 0.3s forwards;
+   }
+}
+
+.heart-stroke {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   fill: black;
+}
+
+@keyframes pulse {
+   0% {
+      transform: scale(1);
+   }
+
+   30% {
+      transform: scale(1.2);
+   }
+
+   60% {
+      transform: scale(1);
+   }
+}
+
+.title-heart {
+    display: flex;
+    justify-content: center;
 }
