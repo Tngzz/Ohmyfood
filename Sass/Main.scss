@@ -284,7 +284,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    font-size: 190%;
+    font-size: 180%;
 }
 
 .title-creat {
@@ -306,49 +306,64 @@ footer {
     border-radius: 14px;
     background-color: white;
     height: 10%;
-    box-shadow: $Box-shadow; 
+    box-shadow: $Box-shadow;
+    animation: opacity 1s both;
 }
 
-.liste {
-    opacity: 0;
-    -webkit-animation: fadeIn 2s;
-            animation: fadeIn 4s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .fade-text:nth-child(2) {
-    -webkit-animation-delay: 0.3333333333s;
-            animation-delay: 0.3s;
-  }
-  .fade-text:nth-child(3) {
-    -webkit-animation-delay: 0.6666666667s;
-            animation-delay: 0.4s;
-  }
-  .fade-text:nth-child(4) {
-    -webkit-animation-delay: 1s;
-            animation-delay: 0.6s;
-  }
-  
-  @-webkit-keyframes fadeIn {
+@keyframes opacity {
     0% {
-      opacity: 0;
+              opacity: 0;
     }
     100% {
-      opacity: 1;
+              opacity: 1;
     }
   }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+
+#case-1 {
+    animation-delay: 0.1s;
+}
+
+#case-2 {
+    animation-delay: 0.2s;
+}
+
+#case-3 {
+    animation-delay: 0.4s;
+}
+
+#case-4 {
+    animation-delay: 0.6s;
+}
+
+#case-5 {
+    animation-delay: 0.8s;
+}
+
+#case-6 {
+    animation-delay: 1.0s;
+}
+
+#case-7 {
+    animation-delay: 1.2s;
+}
+
+#case-8 {
+    animation-delay: 1.4s;
+}
+
+#case-9 {
+    animation-delay: 1.6s;
+}
+
+#case-10 {
+    animation-delay: 1.8s;
+}
+
 .name {
     margin: 2%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .ingrédients {

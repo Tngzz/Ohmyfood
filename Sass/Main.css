@@ -266,7 +266,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  font-size: 190%;
+  font-size: 180%;
 }
 
 .title-creat {
@@ -289,49 +289,82 @@ footer {
   background-color: white;
   height: 10%;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  -webkit-animation: opacity 1s both;
+          animation: opacity 1s both;
 }
 
-.liste {
-  opacity: 0;
-  -webkit-animation: fadeIn 2s;
-  animation: fadeIn 4s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.fade-text:nth-child(2) {
-  -webkit-animation-delay: 0.3333333333s;
-  animation-delay: 0.3s;
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#case-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
-.fade-text:nth-child(3) {
-  -webkit-animation-delay: 0.6666666667s;
-  animation-delay: 0.4s;
+#case-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
-.fade-text:nth-child(4) {
+#case-3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#case-4 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#case-5 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#case-6 {
   -webkit-animation-delay: 1s;
-  animation-delay: 0.6s;
+          animation-delay: 1s;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+#case-7 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+#case-8 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
+
+#case-9 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+#case-10 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
 .name {
   margin: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ingrédients {
