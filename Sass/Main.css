@@ -95,16 +95,20 @@ body {
 }
 
 .menu-button {
-  margin: 3% 3% 0PX 5%;
-  border: solid 1px #F2F2F2;
-  width: 85%;
-  padding: 15px 7px 15px 7px;
-  border-radius: 14px;
-  background-color: #F2F2F2;
   display: flex;
-  justify-content: center;
-  cursor: pointer;
+  align-items: center;
+  background: #f6f6f6;
+  height: auto;
+  width: auto;
+  margin: 10px 20px;
+  border-radius: 20px;
+  position: relative;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 10px;
+}
+
+.menu-button:hover {
+  background-color: rgba(147, 86, 220, 0.3019607843);
 }
 
 .text-button {
@@ -119,18 +123,20 @@ body {
 }
 
 .notification {
-  background-color: transparent;
+  background-color: #9356DC;
+  color: white;
   position: absolute;
-  display: inline-block;
-  left: 2%;
+  border-radius: 14px 14px 14px 14px;
+  transform: translateX(-50%);
+}
+
+.icon-badge {
+  margin-left: 50px;
 }
 
 .badge {
-  position: absolute;
-  padding: 2px 7px;
-  border-radius: 50%;
-  background: #9356DC;
   color: white;
+  margin: 10px;
 }
 
 .restaurants {
@@ -155,7 +161,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 #9356DC;
 }
 
 .container {
@@ -681,11 +687,10 @@ footer {
   .button-text {
     font-size: 20px;
   }
-  .notification {
-    justify-content: flex-start;
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    left: -21%;
+  .text-button {
+    font-size: 18px;
+  }
+  .menu-button {
+    width: 85%;
   }
 }/*# sourceMappingURL=Main.css.map */

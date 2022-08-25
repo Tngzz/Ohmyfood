@@ -5,6 +5,7 @@ $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 $colour-degrade:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+$colour-opacity: #9356dc4d;
 
 //-Police-//
 $font-title: 'Shrikhand', cursive;
@@ -111,16 +112,20 @@ body {
 }
 
 .menu-button {
-    margin: 3% 3% 0PX 5%;
-    border: solid 1px #F2F2F2;
-    width: 85%;
-    padding: 15px 7px 15px 7px;
-    border-radius: 14px;
-    background-color: #F2F2F2;
     display: flex;
-    justify-content: center;
-    cursor: pointer;
+    align-items: center;
+    background: #f6f6f6;
+    height: auto;
+    width: auto;
+    margin: 10px 20px;
+    border-radius: 20px;
+    position: relative;
     box-shadow: $Box-shadow;
+    padding: 10px;
+}
+
+.menu-button:hover {
+    background-color: $colour-opacity;
 }
 
 .text-button {
@@ -135,19 +140,20 @@ body {
 }
 
 .notification {
-    background-color: transparent;
-    position: absolute;
-    display: inline-block;
-    left: 2%;
- 
-}
-  
-.badge {
-    position: absolute;
-    padding: 2px 7px;
-    border-radius: 50%;
-    background: $colour-primary;
+    background-color: #9356DC;
     color: white;
+    position: absolute;
+    border-radius: 14px 14px 14px 14px;
+    transform: translateX(-50%);
+}
+
+.icon-badge {
+    margin-left: 50px;
+}
+
+.badge {
+    color: white;
+    margin:  10px;
 } 
 
 .restaurants {
@@ -172,7 +178,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 $colour-primary;
 }
   
 .container {
@@ -387,7 +393,6 @@ footer {
     background-color: $colour-tertiary;
 }
 
-
 .button-order {
     margin: 0% 22% 10% 22%;
     border-radius: 22px;
@@ -399,7 +404,6 @@ footer {
     margin-top: 5%;
     cursor: pointer;
 }
-
 
 .heart-container {
     position: relative ;
@@ -538,12 +542,12 @@ footer {
     height: 100%;
     transition: .5s ease;
     border-radius: 0px 14px 14px 0px;
-  }
+}
   
-  .liste:hover .overlay {
+.liste:hover .overlay {
     width: 15%;
     left: 85%;
-  }
+}
   
 .icon-validation {
     display: flex;
@@ -556,12 +560,11 @@ footer {
     white-space: nowrap;
     left: 47%;
     transform: rotate(160 deg);
-  }
+}
 
-  .fa-solid, .fas {
+.fa-solid, .fas {
     font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    
+    font-weight: 900; 
 }
 
 @media screen and (min-width: 1100px) {
@@ -662,11 +665,12 @@ footer {
 .button-text {
     font-size: 20px;
 }
-.notification {
-    justify-content: flex-start;
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    left: -21%;
+
+.text-button {
+    font-size: 18px;
+}
+
+.menu-button {
+    width: 85%;
 }
 }
