@@ -216,6 +216,7 @@ footer {
 .ul-block {
   list-style-type: none;
   color: white;
+  cursor: pointer;
 }
 
 .ul-block li {
@@ -594,8 +595,7 @@ footer {
   transform: translate(-50%, -50%);
   white-space: nowrap;
   left: 47%;
-  -webkit-animation: tour 0.4s linear forwards;
-          animation: tour 0.4s linear forwards;
+  transform: rotate(160 deg);
 }
 
 .fa-solid, .fas {
@@ -672,5 +672,20 @@ footer {
     position: absolute;
     top: 40%;
     left: 45%;
+  }
+  .button-order {
+    width: 30%;
+    padding: 1% 3% 1% 3%;
+    margin-left: 35%;
+  }
+  .button-text {
+    font-size: 20px;
+  }
+  .notification {
+    justify-content: flex-start;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    left: -21%;
   }
 }/*# sourceMappingURL=Main.css.map */
