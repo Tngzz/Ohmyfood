@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood</title>
+    <title>La palette du goût</title>
     
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="Style.css">
@@ -55,10 +55,15 @@
             <ul class="list-menu">
                 <a href="#Fricassée d'escargot">
                     <li class="liste" id="case-1">
-                        <h4 class="name">Fricassée d'escargot</h4>
-                        <p class="ingrédients">Au piment d'espelette <span class="price">25€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Fricassée d'escargot</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Au piment d'Espelette </p>
+                                <span class="price">25€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
-                            <div class="icon-validation">
+                            <div class="icon-validation" id="rotating">
                                 <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
@@ -67,8 +72,13 @@
                 </a>
                 <a href="#Foie gras de cannard mi-cuit">   
                     <li class="liste" id="case-2">
-                        <h4 class="name">Foie gras de cannard mi-cuit</h4>
-                        <p class="ingrédients">Et ses copeaux de truffe noire<span class="price">35€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Foie gras de canard mi-cuit</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Et ses copeaux de truffe noire</p>
+                                <span class="price">35€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -78,8 +88,13 @@
                 </a>
                 <a href="#Oeuf au plat">   
                     <li class="liste" id="case-3">
-                        <h4 class="name">Oeuf au plat</h4>
-                        <p class="ingrédients">Assaisonné à la truffe sur lit de caviar<span class="price">20€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Oeuf au plat</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Assaisonné à la truffe sur lit de caviar</p>
+                                <span class="price">20€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -92,8 +107,13 @@
             <ul class="list-menu">
                 <a href="#Filet de boeuf aux herbes">
                     <li class="liste" id="case-4">
-                        <h4 class="name">Filet de boeuf aux herbes</h4>
-                        <p class="ingrédients">Accompagné de sa ribambelle de légumes<span class="price">40€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Filet de boeuf aux herbes</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Accompagné de sa ribambelle de légumes</p>
+                                <span class="price">40€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -103,8 +123,13 @@
                 </a>
                 <a href="#Parmentier de queue de boeuf">
                     <li class="liste" id="case-5">
-                        <h4 class="name">Parmentier de queue de boeuf</h4>
-                        <p class="ingrédients">À la truffe noire sur sa purée de panais<span class="price">35€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Parmentier de queue de boeuf</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">À la truffe noire sur sa purée de panais</p>
+                                <span class="price">35€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -114,8 +139,13 @@
                 </a>
                 <a href="#Filet de turbot">
                     <li class="liste" id="case-6">
-                        <h4 class="name">Filet de turbot</h4>
-                        <p class="ingrédients">Aux agrumes<span class="price">44€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Filet de turbot</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Aux agrumes</p>
+                                <span class="price">44€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -128,8 +158,13 @@
             <ul class="list-menu">
                 <a href="#Paris-Brest">
                     <li class="liste" id="case-7">
-                        <h4 class="name">Paris-Brest</h4>
-                        <p class="ingrédients">Revisité<span class="price">18€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Paris-Brest</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Revisité</p>
+                                <span class="price">18€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -139,8 +174,13 @@
                 </a>
                 <a href="#Macaron au chocolat d'exception">
                     <li class="liste" id="case-8">
-                        <h4 class="name">Macaron au chocolat d'exception</h4>
-                        <p class="ingrédients">Et glace à la vanille de Madagascar<span class="price">22€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Macaron au chocolat d'exception </h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Et glace à la vanille de Madagascar</p>
+                                <span class="price">22€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>
@@ -150,8 +190,13 @@
                 </a>
                 <a href="#Mousse au chocolat">
                     <li class="liste" id="case-9">
-                        <h4 class="name">Mousse au chocolat</h4>
-                        <p class="ingrédients">Au piment d'Espelette et à la truffe noire<span class="price">23€</span></p>
+                        <div class="liste-text">
+                            <h4 class="name">Mousse au chocolat</h4>
+                            <div class="ingrédients-price">
+                                <p class="ingrédients">Au piment d'Espelette et à la truffe noire</p>
+                                <span class="price">23€</span>
+                            </div>
+                        </div>
                         <div class="overlay">
                             <div class="icon-validation">
                                 <i class="fa-solid fa-circle-check"></i>

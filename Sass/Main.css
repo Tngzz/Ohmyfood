@@ -378,13 +378,31 @@ footer {
 .ingrédients {
   margin: 2%;
   font-size: 14px;
-  display: flex;
   justify-content: space-between;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .price {
-  margin: 0;
+  margin-top: 7px;
   font-size: 17px;
+}
+
+.liste:hover .price {
+  margin-left: 10px;
+  padding-right: 18%;
+  transition: 0.5s ease;
+}
+
+.liste-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingrédients-price {
+  display: flex;
+  justify-content: space-between;
 }
 
 .jauge {
@@ -594,16 +612,29 @@ footer {
 .icon-validation {
   display: flex;
   justify-content: center;
-  margin-top: 69%;
+  margin-top: 45%;
   color: white;
   font-size: 26px;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-90%, 87%);
   white-space: nowrap;
-  left: 47%;
+  left: 25%;
   transform: rotate(160 deg);
+  -webkit-animation: rotating 2s linear infinite;
 }
 
+#rotating {
+  transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 .fa-solid, .fas {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -692,5 +723,9 @@ footer {
   }
   .menu-button {
     width: 85%;
+  }
+  .icon-validation {
+    margin-top: 11%;
+    left: 65%;
   }
 }/*# sourceMappingURL=Main.css.map */
