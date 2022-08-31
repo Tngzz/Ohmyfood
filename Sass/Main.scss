@@ -40,7 +40,6 @@ body {
     height: 70px;
     display: flex;
     justify-content: center;
-
 }
 
 .logo {
@@ -89,17 +88,14 @@ body {
 .button-explore {
     margin: 0% 22% 5% 22%;
     border-radius: 22px;
-    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);;
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
     border: none;
     box-shadow: rgb(99 99 99 / 20%) 3px 5px 3px 0px;
-    
-}
-
-.button-text {
-    font-family: $font-texte;
-    font-size: larger;
-    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
     color: white;
+    width: auto;
+    padding: 13px;
 }
 
 .title-nav {
@@ -115,17 +111,19 @@ body {
     display: flex;
     align-items: center;
     background: #f6f6f6;
-    height: auto;
+    height: 30px;
     width: auto;
     margin: 10px 20px;
     border-radius: 20px;
     position: relative;
     box-shadow: $Box-shadow;
     padding: 10px;
+    cursor: pointer;
 }
 
 .menu-button:hover {
     background-color: $colour-opacity;
+    box-shadow: 0 8px 16px 0 #9356dc;
 }
 
 .text-button {
@@ -209,12 +207,12 @@ body {
     margin-top: 5px;
 }
 
-a.new {
+.new {
     position: absolute;
     right: 8%;
     border: transparent solid 1px;
     background-color: #8bcda3;
-    margin-top: 4%;
+    margin-top: -147px;
     font-size: larger;
     color: #00802b;
 }
@@ -316,6 +314,7 @@ footer {
     height: 10%;
     box-shadow: $Box-shadow;
     animation: opacity 1s both;
+    cursor: pointer;
 }
 
 @keyframes opacity {
@@ -424,6 +423,10 @@ footer {
     padding: 3% 3% 3% 3%;
     margin-top: 5%;
     cursor: pointer;
+    font-family: $font-texte;
+    font-size: larger;
+    padding: 8px;
+    color: white;
 }
 
 .heart-container {
@@ -449,6 +452,7 @@ footer {
    position: relative;
    overflow: hidden;
    clip-path: url(#svgPath);
+   cursor: pointer;
 
    &:hover {
       animation: pulse 0.6s 0.3s infinite;
@@ -577,26 +581,22 @@ footer {
     margin-top: 45%;
     color: white;
     font-size: 26px;
-    position: absolute;
     transform: translate(-90%, 87%);
-    white-space: nowrap;
-    left: 25%;
-    transform: rotate(160 deg);
-    -webkit-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+    
 }
 
 #rotating {
-    
-    
     transform-origin: 50% 50%;
 }
 
-@-webkit-keyframes rotating {
+@keyframes rotating {
+    
     from{
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to{
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -604,6 +604,8 @@ footer {
     font-family: "Font Awesome 6 Free";
     font-weight: 900; 
 }
+
+
 
 @media screen and (min-width: 1100px) {
 
@@ -671,12 +673,7 @@ footer {
     margin: 5px 5px 5px 25px;
  }
 
- a.new {
-    margin-top: 2%;
-    right: 5%;
- }
-
- .menu {
+.menu {
     display: flex;
     margin-bottom: 70px;
  }
@@ -700,10 +697,6 @@ footer {
     margin-left: 35%;
 }
 
-.button-text {
-    font-size: 20px;
-}
-
 .text-button {
     font-size: 18px;
 }
@@ -713,9 +706,11 @@ footer {
 }
 
 .icon-validation {
-    margin-top: 11%;
-    left: 65%;
+   display: flex;  
+   justify-content: center;
 }
 
-
+.new {
+    margin-top: -147px;
+}
 }

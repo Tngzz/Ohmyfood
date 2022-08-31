@@ -29,26 +29,26 @@
     <section class="loader-container">
         <div class="loader"></div>
     </section>
-        <section class="page">
+        <div class="page">
             <header>
                 <div class="logo-head">
-                    <img class="logo" src="Maquettes-Ohmyfood/images/logo/ohmyfood.png">
+                    <img class="logo" src="Maquettes-Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood"> 
                 </div>  
                 <div class="location">
                 <div class="icon-location">
                         <i class="fa-solid fa-location-dot"></i>
                 </div> 
-                <text class="text-location">
+                <div class="text-location">
                         <b>Paris, Belleville</b>
-                </text> 
+                </div> 
                 </div>
                 <section class="booking">
                     <div class="title">
                         <b>Réservez le menu qui vous convient</b>
                     </div>
                     <div class="subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>
-                    <button type="explore" class="button-explore">
-                        <text class="button-text">Explorer nos restaurants</text>
+                    <button type="button" class="button-explore">
+                        Explorer nos restaurants
                     </button>
                 </section>
             </header>
@@ -64,9 +64,9 @@
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
                             <a href="#">
-                                <text class="text-button">
+                                <div class="text-button">
                                     <b>Choissisez un restaurant</b>
-                                </text>
+                                </div>
                             </a>
                         </li>
                         <li class="menu-button">
@@ -77,9 +77,9 @@
                                 <i class="fa-solid fa-bars"></i>
                             </div>
                             <a href="#">
-                                <text class="text-button">
+                                <div class="text-button">
                                     <b>Composez votre menu</b>
-                                </text>
+                                </div>
                             </a>
                         </li>
                         <li class="menu-button">
@@ -90,9 +90,9 @@
                                 <i class="fa-solid fa-store"></i>
                             </div>
                             <a href="#">
-                                <text class="text-button">
+                                <div class="text-button">
                                     <b>Dégustez au restaurant</b>
-                                </text>
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -103,7 +103,9 @@
                         <div class="card">
                             <a href="LaPaletteDuGoutIndex.html">
                                 <img class="image-restaurants" src="Maquettes-Ohmyfood/images/restaurants/pallette-du-gout.jpg" alt="La palette du goût">
-                                <a class="new">Nouveau</a>
+                                <div class="new">
+                                    Nouveau
+                                </div>
                                 <div class="container-card">
                                     <h4 class="restaurant-name">La palette du goût</h4>
                                     <p class="restaurant-location">Ménilmontant</p>
@@ -115,34 +117,33 @@
                                         </defs>
                                     </svg>
                                     <div class="heart-container">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                                    </svg>
-                                    <a href='#La palette du goût' class='heart-clip'></a>
-                                    </div>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                                        </svg>
+                                        <div class='heart-clip'></div>
+                                    </div> 
                                 </div>
                             </a>       
                         </div>
                         <div class="card">
                             <a href="LaNoteEnchantée.html">
                                 <img class="image-restaurants" src="Maquettes-Ohmyfood/images/restaurants/note-enchantée.jpg" alt="La note enchantée">
-                                <a class="new">Nouveau</a>
+                                <div class="new">Nouveau</div>
                                 <div class="container-card">
                                     <h4 class="restaurant-name">La note enchantée</h4>
                                     <p class="restaurant-location">Charonne</p>
-                                    <svg id='heart' height="0" width="0">
+                                    <svg id='heart-svg' height="0" width="0">
                                         <defs>
                                             <clipPath id="svgPath">
                                                 <path d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    
                                     <div class="heart-container">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                                    </svg>
-                                    <a href='#La note enchantée' class='heart-clip'></a>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                                        </svg>
+                                        <a href='#Lanoteenchantée' class='heart-clip'></a>
                                     </div>
                                 </div>
                             </a>       
@@ -153,30 +154,30 @@
                                 <div class="container-card">
                                     <h4 class="restaurant-name">À la française</h4>
                                     <p class="restaurant-location">Cité rouge</p>
-                                    <svg id='heart' height="0" width="0">
+                                    <svg id='heart-svg' height="0" width="0">
                                         <defs>
                                             <clipPath id="svgPath">
                                                 <path d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    
                                     <div class="heart-container">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                                    </svg>
-                                    <a href='#À la française' class='heart-clip'></a>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                                        </svg>
+                                    </a>
+                                        <a href='#ALaFrançaise' class='heart-clip'></a>
                                     </div>
                                 </div>
-                            </a>       
+                                   
                         </div>
                         <div class="card">
                             <a href="LedéliceDesSens.html">
-                                <img class="image-restaurants" src="Maquettes-Ohmyfood/images/restaurants/Le délice des sens.jpg" alt="Le délice des sens">
+                                <img class="image-restaurants" src="Maquettes-Ohmyfood/images/restaurants/Le-délice-des-sens.jpg" alt="Le délice des sens">
                                 <div class="container-card">
                                     <h4 class="restaurant-name">Le délice des sens</h4>
                                     <p class="restaurant-location">Folie-Méricourt</p>
-                                    <svg id='heart' height="0" width="0">
+                                    <svg id='heart-svg' height="0" width="0">
                                         <defs>
                                             <clipPath id="svgPath">
                                                 <path d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
@@ -184,10 +185,10 @@
                                         </defs>
                                     </svg>
                                     <div class="heart-container">
-                                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                                    </svg>
-                                    <a href='#Le délice des sens' class='heart-clip'></a>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                                        </svg>
+                                        <a href='#Ledélicedessens' class='heart-clip'></a>
                                     </div>
                                 </div>
                             </a>       
@@ -216,6 +217,6 @@
                     </li>
                 </ul>
             </div>
-            </footer>
-        </section>
+        </footer>
+    </div>
 </html>
