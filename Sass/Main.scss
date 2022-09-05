@@ -14,11 +14,19 @@ $font-texte: 'Roboto' , sans-serif;
 //-Shadow-//
 $Box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
 
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
-
+h1 {
+    margin: 0;
+}
 header {
     font-family: $font-texte;
 }
@@ -209,10 +217,20 @@ body {
 
 .new {
     position: absolute;
-    right: 8%;
+    right: 10%;
     border: transparent solid 1px;
     background-color: #8bcda3;
     margin-top: -147px;
+    font-size: larger;
+    color: #00802b;
+}
+
+.new1 {
+    position: absolute;
+    right: 10%;
+    margin-top: -147px;
+    border: transparent solid 1px;
+    background-color: #8bcda3;
     font-size: larger;
     color: #00802b;
 }
@@ -291,12 +309,13 @@ footer {
     justify-content: center;
     padding-top: 30px;
     font-size: 180%;
+    margin-bottom: 20px;
 }
 
 .title-creat {
     border-bottom: $colour-tertiary solid 3px;
     margin-left: 5%;
-    width: 41px;
+    width: 41px
 }
 
 .list-menu {
@@ -367,11 +386,11 @@ footer {
 }
 
 .name {
-    margin: 2%;
+    margin: 2% 2% 0% 2%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .ingrédients {
@@ -442,7 +461,7 @@ footer {
     width: 40px;
     height: 40px;
     left: 3%;
-    margin-top: 60px;
+    margin-top: 37px;
 }
 
 .heart-clip {
@@ -462,6 +481,7 @@ footer {
          opacity: 1;
       }
    }
+
    &::before {
       content: "";
       display: block;
@@ -474,6 +494,7 @@ footer {
       transition: transform 0.2s linear, opacity 0.2s linear;
       transform-origin: center 60%;
    }
+
    &.active {
       animation: pulse 0.6s 0.3s forwards;
    }
@@ -509,7 +530,7 @@ footer {
 
 .loader-container {
     animation: fadeOut 1s forwards 3s;
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 32%;
 }
@@ -521,9 +542,9 @@ footer {
     width: 100px;
     height: 100px;
     animation: spinner 2.5s linear infinite;
+    
 }
     
-
 .page {
     opacity: 0;
     animation: fadeIn 1s forwards 3s;
@@ -574,47 +595,54 @@ footer {
     left: 85%;
 }
 
-
 .icon-validation {
     display: flex;
     justify-content: center;
-    margin-top: 45%;
+    margin-top: 39%;
     color: white;
     font-size: 26px;
-    transform: translate(-90%, 87%);
-    animation: rotating 2s linear infinite;
-    
 }
 
-#rotating {
-    transform-origin: 50% 50%;
+.liste:hover .icon-validation {
+    -webkit-animation: rotate-center 0.8s ease-in-out both;
+    animation: rotate-center 0.8s ease-in-out both;
 }
 
-@keyframes rotating {
-    
-    from{
-        transform: rotate(0deg);
+.fa-solid.fa-circle-check {
+    font-size: 100%;
+}
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
     }
-    to{
-        transform: rotate(360deg);
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
     }
-}
-
-.fa-solid, .fas {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900; 
-}
-
-
-
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
 @media screen and (min-width: 1100px) {
+.card {
+    height: 270px;
+}
 
 .restaurant-name{
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .restaurant-location{
-    font-size: 14px;
+    font-size: 19px;
 }
 
 .heart-container {
@@ -642,10 +670,6 @@ footer {
     width: auto;
 }
 
-.title-heart {
-    justify-content: space-evenly;
-}
-
 .image-fond {
     height: 400px;
     object-fit: cover;
@@ -666,6 +690,7 @@ footer {
 
 .ul-block {
     display: inline-flex;
+
     
 }
 
@@ -676,6 +701,7 @@ footer {
 .menu {
     display: flex;
     margin-bottom: 70px;
+    justify-content: center;
  }
 
 .card-restaurants {
@@ -686,7 +712,7 @@ footer {
 }
 
 .loader-container {
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 45%;
 }
@@ -702,7 +728,7 @@ footer {
 }
 
 .menu-button {
-    width: 85%;
+    width: 20%;
 }
 
 .icon-validation {
@@ -711,6 +737,13 @@ footer {
 }
 
 .new {
-    margin-top: -147px;
+    margin-top: -143px;
+    right: 6%;
 }
+
+.new1 {
+    margin-top: -149PX;
+    right: 56%;
+}
+
 }

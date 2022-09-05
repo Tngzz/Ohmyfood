@@ -4,6 +4,10 @@ a {
   color: black;
 }
 
+h1 {
+  margin: 0;
+}
+
 header {
   font-family: "Roboto", sans-serif;
 }
@@ -195,10 +199,20 @@ body {
 
 .new {
   position: absolute;
-  right: 8%;
+  right: 10%;
   border: transparent solid 1px;
   background-color: #8bcda3;
   margin-top: -147px;
+  font-size: larger;
+  color: #00802b;
+}
+
+.new1 {
+  position: absolute;
+  right: 10%;
+  margin-top: -147px;
+  border: transparent solid 1px;
+  background-color: #8bcda3;
   font-size: larger;
   color: #00802b;
 }
@@ -274,6 +288,7 @@ footer {
   justify-content: center;
   padding-top: 30px;
   font-size: 180%;
+  margin-bottom: 20px;
 }
 
 .title-creat {
@@ -369,11 +384,11 @@ footer {
 }
 
 .name {
-  margin: 2%;
+  margin: 2% 2% 0% 2%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .ingrédients {
@@ -441,7 +456,7 @@ footer {
   width: 40px;
   height: 40px;
   left: 3%;
-  margin-top: 60px;
+  margin-top: 37px;
 }
 
 .heart-clip {
@@ -519,7 +534,7 @@ footer {
 .loader-container {
   -webkit-animation: fadeOut 1s forwards 3s;
           animation: fadeOut 1s forwards 3s;
-  position: absolute;
+  position: fixed;
   top: 40%;
   left: 32%;
 }
@@ -618,46 +633,45 @@ footer {
 .icon-validation {
   display: flex;
   justify-content: center;
-  margin-top: 45%;
+  margin-top: 39%;
   color: white;
   font-size: 26px;
-  transform: translate(-90%, 87%);
-  -webkit-animation: rotating 2s linear infinite;
-          animation: rotating 2s linear infinite;
 }
 
-#rotating {
-  transform-origin: 50% 50%;
+.liste:hover .icon-validation {
+  -webkit-animation: rotate-center 0.8s ease-in-out both;
+  animation: rotate-center 0.8s ease-in-out both;
 }
 
-@-webkit-keyframes rotating {
-  from {
-    transform: rotate(0deg);
+.fa-solid.fa-circle-check {
+  font-size: 100%;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
-
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
-.fa-solid, .fas {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
-
 @media screen and (min-width: 1100px) {
+  .card {
+    height: 270px;
+  }
   .restaurant-name {
-    font-size: 24px;
+    font-size: 28px;
   }
   .restaurant-location {
-    font-size: 14px;
+    font-size: 19px;
   }
   .heart-container {
     margin-top: -61px;
@@ -678,9 +692,6 @@ footer {
   .create-menu {
     margin: -77px 5% 0 5%;
     width: auto;
-  }
-  .title-heart {
-    justify-content: space-evenly;
   }
   .image-fond {
     height: 400px;
@@ -706,6 +717,7 @@ footer {
   .menu {
     display: flex;
     margin-bottom: 70px;
+    justify-content: center;
   }
   .card-restaurants {
     display: grid;
@@ -714,7 +726,7 @@ footer {
     grid-gap: 20px;
   }
   .loader-container {
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 45%;
   }
@@ -727,13 +739,18 @@ footer {
     font-size: 18px;
   }
   .menu-button {
-    width: 85%;
+    width: 20%;
   }
   .icon-validation {
     display: flex;
     justify-content: center;
   }
   .new {
-    margin-top: -147px;
+    margin-top: -143px;
+    right: 6%;
+  }
+  .new1 {
+    margin-top: -149PX;
+    right: 56%;
   }
 }/*# sourceMappingURL=Main.css.map */
