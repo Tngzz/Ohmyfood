@@ -24,9 +24,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
 h1 {
     margin: 0;
 }
+
 header {
     font-family: $font-texte;
 }
@@ -106,8 +108,76 @@ body {
     padding: 13px;
 }
 
+.button-explore:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
+
 .title-nav {
     margin-left: 10px;
+    margin-top: 20px;
 }
 
 .menu {
@@ -138,6 +208,7 @@ body {
     margin: 20px;
     color: black;
     font-size: larger;
+    cursor: pointer;
 }
 
 .text-notification {
@@ -161,6 +232,8 @@ body {
     color: white;
     margin:  10px;
 } 
+
+//Restaurant + card + position//
 
 .restaurants {
     background-color: #F2F2F2;
@@ -336,6 +409,8 @@ footer {
     cursor: pointer;
 }
 
+// Animation case//
+
 @keyframes opacity {
     0% {
               opacity: 0;
@@ -343,7 +418,7 @@ footer {
     100% {
               opacity: 1;
     }
-  }
+}
 
 #case-1 {
     animation-delay: 0.1s;
@@ -400,7 +475,6 @@ footer {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
 }
 
 .price {
@@ -413,7 +487,6 @@ footer {
     padding-right: 18%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-
 }
 
 .liste-text {
@@ -463,6 +536,7 @@ footer {
     left: 3%;
     margin-top: 37px;
 }
+// Animation heart//
 
 .heart-clip {
    display: block;
@@ -528,6 +602,8 @@ footer {
     justify-content: center;
 }
 
+// Loader//
+
 .loader-container {
     animation: fadeOut 1s forwards 3s;
     position: fixed;
@@ -542,12 +618,12 @@ footer {
     width: 100px;
     height: 100px;
     animation: spinner 2.5s linear infinite;
-    
 }
     
 .page {
     opacity: 0;
     animation: fadeIn 1s forwards 3s;
+    
 }
 
 @keyframes spinner {
@@ -571,6 +647,8 @@ footer {
         opacity: 0;
     }
 }
+
+// Animation checked//
 
 .liste {
     position: relative;
@@ -611,6 +689,7 @@ footer {
 .fa-solid.fa-circle-check {
     font-size: 100%;
 }
+
  @-webkit-keyframes rotate-center {
     0% {
       -webkit-transform: rotate(0);
@@ -630,15 +709,18 @@ footer {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
     }
-  }
-  
+}
+
+//Media queries//
+
 @media screen and (min-width: 1100px) {
+
 .card {
     height: 270px;
 }
 
 .restaurant-name{
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .restaurant-location{
@@ -690,19 +772,17 @@ footer {
 
 .ul-block {
     display: inline-flex;
-
-    
 }
 
- .ul-block li {
+.ul-block li {
     margin: 5px 5px 5px 25px;
- }
+}
 
 .menu {
     display: flex;
     margin-bottom: 70px;
     justify-content: center;
- }
+}
 
 .card-restaurants {
     display: grid;
@@ -738,12 +818,11 @@ footer {
 
 .new {
     margin-top: -143px;
-    right: 6%;
+    right: 5%;
 }
 
 .new1 {
     margin-top: -149PX;
     right: 56%;
 }
-
 }

@@ -87,8 +87,60 @@ body {
   padding: 13px;
 }
 
+.button-explore:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 .title-nav {
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 .menu {
@@ -119,6 +171,7 @@ body {
   margin: 20px;
   color: black;
   font-size: larger;
+  cursor: pointer;
 }
 
 .text-notification {
@@ -668,7 +721,7 @@ footer {
     height: 270px;
   }
   .restaurant-name {
-    font-size: 28px;
+    font-size: 26px;
   }
   .restaurant-location {
     font-size: 19px;
@@ -747,7 +800,7 @@ footer {
   }
   .new {
     margin-top: -143px;
-    right: 6%;
+    right: 5%;
   }
   .new1 {
     margin-top: -149PX;
