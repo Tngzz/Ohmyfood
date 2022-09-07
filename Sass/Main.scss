@@ -35,6 +35,7 @@ header {
 
 main {
     font-family: $font-texte;
+
 }
 
 footer {
@@ -340,7 +341,6 @@ footer {
     color: white;
 }
 
-
 //-CSS POUR PAGE SECONDAIRE-//
 
 .icon-back {
@@ -521,6 +521,8 @@ footer {
     color: white;
 }
 
+// Animation heart//
+
 .heart-container {
     position: relative ;
     width: 40px;
@@ -536,7 +538,6 @@ footer {
     left: 3%;
     margin-top: 37px;
 }
-// Animation heart//
 
 .heart-clip {
    display: block;
@@ -547,14 +548,6 @@ footer {
    clip-path: url(#svgPath);
    cursor: pointer;
 
-   &:hover {
-      animation: pulse 0.6s 0.3s infinite;
-
-      &::before {
-         transform: scale(1);
-         opacity: 1;
-      }
-   }
 
    &::before {
       content: "";
@@ -562,17 +555,12 @@ footer {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background-color: $colour-primary;
+      background-image: $colour-degrade;
       opacity: 0;
       transform: scale(0);
       transition: transform 0.2s linear, opacity 0.2s linear;
       transform-origin: center 60%;
    }
-
-   &.active {
-      animation: pulse 0.6s 0.3s forwards;
-   }
-}
 
 .heart-stroke {
    width: 100%;
@@ -583,23 +571,15 @@ footer {
    fill: black;
 }
 
-@keyframes pulse {
-   0% {
-      transform: scale(1);
-   }
-
-   30% {
-      transform: scale(1.2);
-   }
-
-   60% {
-      transform: scale(1);
-   }
-}
 
 .title-heart {
     display: flex;
     justify-content: center;
+}
+
+.heart-clip:hover .heart-stroke {
+    fill: transparent;
+    
 }
 
 // Loader//
