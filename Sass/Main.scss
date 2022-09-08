@@ -33,6 +33,10 @@ h2 {
     font-size: large;
 }
 
+h3 {
+    font-size: xx-large;
+}
+
 header {
     font-family: $font-texte;
 }
@@ -89,7 +93,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    font-size: xx-large;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -289,7 +293,7 @@ body {
 .restaurant-location {
     margin: 0;
     color: black;
-    font-size: small;
+    font-size: 15px;
     margin-top: 5px;
 }
 
@@ -469,7 +473,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .ingrédients {
@@ -705,7 +709,7 @@ footer {
     }
 
     .restaurant-name{
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .restaurant-location{
@@ -818,5 +822,9 @@ footer {
         top: 1px;
         left: 2px;
         fill: black;
+    }
+
+    .name {
+        font-size: 14px;
     }
 }

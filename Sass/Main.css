@@ -63,7 +63,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
-  font-size: xx-large;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -246,7 +246,7 @@ body {
 .restaurant-location {
   margin: 0;
   color: black;
-  font-size: small;
+  font-size: 15px;
   margin-top: 5px;
 }
 
@@ -801,5 +801,11 @@ footer {
   .new1 {
     margin-top: -149PX;
     right: 56%;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .ingrédients {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=Main.css.map */
