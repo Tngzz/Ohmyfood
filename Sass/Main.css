@@ -672,6 +672,9 @@ footer {
   height: 100%;
   transition: 0.5s ease;
   border-radius: 0px 14px 14px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .liste:hover .overlay {
@@ -681,10 +684,12 @@ footer {
 
 .icon-validation {
   display: flex;
-  justify-content: center;
-  margin-top: 39%;
-  color: white;
-  font-size: 26px;
+    justify-content: center;
+    
+    color: white;
+    font-size: 26px;
+    align-items: center;
+    margin: 25PX 35% 26PX 27%;
 }
 
 .liste:hover .icon-validation {
@@ -712,12 +717,13 @@ footer {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
   .card {
     height: 270px;
+    margin: 14px;
   }
   .restaurant-name {
-    font-size: 26px;
+    font-size: 114%;
   }
   .restaurant-location {
     font-size: 19px;
@@ -769,10 +775,7 @@ footer {
     justify-content: center;
   }
   .card-restaurants {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    display: flex;
   }
   .loader-container {
     position: fixed;
@@ -785,22 +788,21 @@ footer {
     margin-left: 35%;
   }
   .text-button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .menu-button {
     width: 20%;
   }
   .icon-validation {
-    display: flex;
-    justify-content: center;
+    margin-top: 24px;
   }
   .new {
     margin-top: -143px;
-    right: 5%;
+    right: 53%;
   }
   .new1 {
     margin-top: -149PX;
-    right: 56%;
+    right: 78%;
   }
   .name {
     font-size: 20px;
@@ -808,4 +810,39 @@ footer {
   .ingrédients {
     font-size: 16px;
   }
-}/*# sourceMappingURL=Main.css.map */
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+  
+  .card-restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .new1 {
+    right: 6%;
+  }
+  .new {
+    right: 56%;
+  }
+  .image-fond {
+    width: 100%;
+    HEIGHT: 450PX;
+    OBJECT-FIT: COVER;
+    background-image: url(/Maquettes-Ohmyfood/images/restaurants/pallette-du-gout.jpg);
+  }
+  .icon-validation {
+    margin-top: 20px;
+  }
+  .liste {
+    width:75%;
+    height: 57px;
+  }
+.list-menu {
+  display: grid; 
+  grid-template-columns: 2fr 2fr;
+}
+.loader-container {
+  left:45% ;
+}
+}
+/*# sourceMappingURL=Main.css.map */
